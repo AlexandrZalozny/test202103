@@ -1,6 +1,6 @@
 <?php
 
-namespace DoctrineExtensions\Query\Mysql;
+namespace App\Dql;
 
 use Doctrine\ORM\Query\AST\Functions\FunctionNode;
 use Doctrine\ORM\Query\Lexer;
@@ -8,6 +8,7 @@ use Doctrine\ORM\Query\Lexer;
 class Power extends FunctionNode
 {
     public $arithmeticExpression;
+    public $power;
 
     public function getSql(\Doctrine\ORM\Query\SqlWalker $sqlWalker)
     {
